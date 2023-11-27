@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/StyleLogin.css')}}">
+    <title>login</title>
+</head>
+<body>
+
+    <div class="conten">
+        <div class="part1">
+            <div class="user">
+                <i class="fa-regular fa-user" ></i>
+            </div>
+            <form action="/validarLogin" method="post">
+                <h1>
+                    Iniciar Sesion
+                </h1>
+                <h2 style="background-color: rgba(255, 0, 0, 0.678); border-radius: 5px; position: fixed; width: 21.5%; text-align: center;">
+                    {% if mensaje %}
+                    {{ mensaje }}
+                    {% endif %}
+                </h2>
+
+                <div class="op">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <input type="email" name="correo" required>
+                        <label>Email</label>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-sharp fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" name="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">Recordar Siempre
+                    </label>
+                    <a href="#">olvidaste la contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn">Ingresar</button>
+
+                <div class="login-registrer">
+                    <p>No eres miembro?<a href="#" class="registrer-link">Se parte de nosotros!!</a>
+                    </p>
+                </div>
+
+                
+            </form>
+        </div>
+
+        <div class="part2">
+
+            <div class="para">
+                <h1>
+                    Bienvenido al <br> Colegio Naciones Unidas I.E.D
+                </h1>
+
+                <p>
+                    Recuerda que la educación es el pasaporte hacia el futuro, porque el mañana pertenece a aquellos que se preparan hoy
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
