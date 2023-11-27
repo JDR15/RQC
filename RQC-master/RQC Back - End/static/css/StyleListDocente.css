@@ -1,0 +1,355 @@
+:root{
+    --header: #010324;
+    --blanco: #ffff;
+    --button:#0066FF;
+    --gris: #D9D9D9;
+    --rojo: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    display: flex;
+}
+
+
+/*Encabezado*/
+.Encabezado2{
+    background-color: var(--header);
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    color:  var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Encabezado2 .titulo{
+    width: 80%;
+    height: 7%;
+    font-size: 18px;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+}
+.titulo .logo{
+    width: 30%;
+    height: 90%;
+}
+.Encabezado2 .nombre{
+    width: 80%;
+    height: 4.5%;
+    margin-top: 15%;
+    font-size: 25px;
+
+}
+.iconos{
+    width: 80%;
+    height: 30%;
+    margin-top: 20%;
+    font-size: 25px;
+}
+.iconos .icono{
+    display: flex;
+    padding: 5% 0% 5% 0%;
+    align-items: center;
+
+}
+.icono:hover{
+    background-color: #337AB7;
+}
+.Encabezado2 a{
+    text-decoration: none;
+    color: var(--blanco);
+    margin-left: 5%;
+    width: 50%;
+}
+.salir{
+    width: 80%;
+    height: 3%;
+    font-size: 25px;
+    display: flex;
+    padding: 5% 0% 5% 0%;
+    margin-top: 80%;
+    align-items: center;
+}
+.salir:hover{
+    background-color: #337AB7;
+}
+
+
+/*Main Contenido*/
+
+main{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.busq{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra_busq{
+    width: 25.625em;
+    height:  2.053em;
+    display: flex;
+    border: 1px solid var(--gris);
+    border-radius: 10px;
+}
+
+.barra_busq .icon{
+    width: 2.188em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    background: var(--gris);
+}
+
+.barra_busq .icon i{
+    font-size: 1.2em;
+}
+
+.barra_busq .inpu{
+    width: 100%;
+    height: 100%;
+}
+
+.barra_busq .inpu input{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    border: 0;
+}
+
+.busq .linea{
+    width: 100%;
+    height: 2px;
+    background: var(--header);
+}
+
+.conte{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conte .dosD{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.conte .dosD a{
+    color: var(--header);
+    width: 45%;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.conte .dosD .docente{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 19px;
+    border: 1px solid #010324;
+}
+
+.conte .dosD  .docente .fot{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 19px 0px 0px 19px;
+    background: var(--header);
+}
+
+.conte .dosD  .docente .fot img{
+    width: 5em;
+    height: 4.688em;
+    border-radius: 5em;
+}
+.docente .info{
+    width: 70%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.docente .info h3{
+    font-weight: normal;
+}
+
+.conte button{
+    margin-top: 40px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: var(--button);
+    border: 0;
+    border-radius: 8px;
+    color: var(--blanco);
+}
+.conte button:hover{
+    cursor: pointer;
+    background-color: var(--header);
+}
+
+/* Estilo del modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.646); /* Fondo oscuro semi-transparente */
+}
+  
+.modal-content {
+    background: var(--blanco);
+    margin: 8% auto;
+    width:46.75em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1em 1em 0px 0px;
+    padding: 10px 0px 10px 0px;
+    background: var(--header);
+    color: var(--blanco);
+}
+.modal-content .title h2{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.modal-content .title i{
+    width: 5%;
+    display: flex;
+    font-size: 1.3em;
+}
+
+.modal-content form{
+    width: 90%;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+form .info1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+form .info1 h4{
+    font-weight: 100
+}
+
+form .info1 input{
+    height: 1.6em;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+
+form .segun{
+    width: 9.688em;
+    height: 2.875em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .segun1{
+    width: 13em;
+    height: 2.875em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun2{
+    width: 9em;
+    height: 2.875em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun3{
+    width: 3.375em;
+    height: 2.875em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun4{
+    width: 9.688em;
+    height: 2.875em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun5{
+    width: 7.313em;
+    height: 2.875em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-content .buttom{
+    display: flex;
+    justify-content: end;
+}
+
+form button{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: var(--button);
+    border: 0;
+    border-radius: 8px;
+    color: var(--blanco);
+}

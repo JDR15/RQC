@@ -1,0 +1,233 @@
+:root{
+    --header: #010324;
+    --Blanco: #fff;
+    --fondo:#D9D9D9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background-image: url(../img/pexels-pixabay-267885\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conten{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    position: absolute;
+}
+
+.conten .part1{
+    background:var(--fondo);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.user{
+    background-image: url(../img/Ellipse\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 6.041em;
+    height: 5.25em;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin-top: -3.125em;
+}
+
+.user i{
+    color: var(--Blanco);
+    font-size: 2.813em;
+}
+
+form{
+    width: 85%;
+    height: 80%;
+    margin-top: 0.75em;
+    text-align: center;
+}
+
+.op{
+    margin-top: 5rem;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--header);
+    margin: 30px 0;
+}
+
+.input-box label{
+    position:absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--blanco);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color:var(--cL);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: var(--header);
+    line-height: 57px;
+}
+.remember-forgot{
+    font-size: .9em;
+    color: var(--header);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.remember-forgot label input{
+    accent-color:var(--cL);
+    margin-right: 3px;
+}
+
+.remember-forgot label{
+    color: var(--blanco);
+}
+
+.remember-forgot a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background:var(--ini);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    background: var(--header);
+    color: var(--Blanco);
+    font-weight: 500;
+    margin-top: 2em;
+}
+.btn input:hover{
+    background:var(--cL);
+  }
+
+.login-registrer{
+    font-size: .9em;
+    color: var(--blanco);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-registrer p a{
+    color:var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-registrer p a:hover {
+    text-decoration: underline;
+}
+
+.conten .part2{
+    background: var(--header);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.part2 .para{
+    color: var(--Blanco);
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.para h1{
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 5;
+}
+
+.para p{
+    font-size: 1.5em;
+    margin-top: 3em;
+    background: #010324;
+    width: 90%;
+    text-align: center;
+}
+
+
+@media only screen and ( max-width: 768px){
+
+    .conten{
+        width: 90%;
+    }
+    
+    .conten .part1{
+        width: 100%;
+        border-radius: 1em;
+    }
+    .conten .part2{
+        display: none;
+    }
+    .part2 .para{
+
+        display: none;
+    }
+}

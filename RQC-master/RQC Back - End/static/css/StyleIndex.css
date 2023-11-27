@@ -1,0 +1,333 @@
+:root{
+    --header: #010324;
+    --blanco: #ffff;
+    --cards: #D1CAFF;
+    --button:#0066FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header{
+    background: var(--header);
+    height: 4.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .head{
+    width: 75em;
+    height: 3.125em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-logo{
+    width: 20em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title-logo .logo{
+    width: 3.5em;
+    height: 100%;
+}
+
+.title-logo .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-logo .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+.title-logo .title p{
+    font-size: 1.3em;
+}
+
+.op{
+    width: 38.438em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.op ul{
+    display: flex;
+}
+
+.op ul li{
+    padding: 1em;
+    margin: 1em;
+    font-size: 1.125em;
+}
+
+.op ul li a{
+    color: var(--blanco);
+}
+
+.head .buton{
+    background: var(--button);
+    border: 0;
+    width: 124px;
+    height: 38px;
+    border-radius: 5px;
+}
+
+.head .buton a{
+
+    color: var(--blanco);
+    font-size: 1.125em;
+}
+
+/* -------Main--------- */
+
+.img-presen{
+    height: 37.5em;
+    background-image: url(../img/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-presen h1{
+    font-weight: 200;
+    color: var(--blanco);
+    font-size: 2.25em;
+}
+
+.himno{
+    width: 100%;
+    height: 49.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.todo{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+}
+.himn{
+    width: 45.063em;
+    height: 90%;
+}
+
+.himn .nuestro {
+    display: flex;
+    justify-content: center;
+}
+
+.himn h1{
+    width: 100%;
+    font-weight: 100;
+    margin-bottom: 5%;
+    font-size: 1.563em;
+    text-align: center;
+}
+
+.parra{
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parra .coes{
+    width: 45%;
+    padding: 0 2%;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parra .coes p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.parra .coes .estrofas{
+    margin: 10px;
+}
+
+.foto{
+    width: 32.438em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cads{
+    height: 37.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cards);
+}
+
+.card{
+    width: 55.563em;
+    height: 32.938em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cars{
+    width: 23.625em;
+    height: 100%;
+    background: var(--blanco);
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cars .img{
+    width: 100%;
+    height: 6.4em;
+    border-radius: 1.5em 1.5em 0px 0px;
+    background: #120000;
+} 
+
+.se{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.se h2{
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.se .matri{
+    width: 94%;
+    padding: 10px;
+}
+
+.se .conte{
+    text-align: justify;
+    padding: 10px;
+}
+
+.se ul{
+    width: 80%;
+}
+
+.se ul li {
+    margin-top: 10px;
+    list-style: decimal;
+}
+
+.se a{
+    text-decoration-line: underline;
+    color: black;
+}
+
+.se .title {
+    text-align: center;
+}
+
+.se .manueal {
+    width: 94%;
+    padding: 9px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-end;
+}
+
+.lema{
+    display: flex;
+    justify-content: center;
+    background: var(--cards);
+    height: 33.313em;
+}
+
+.lema img{
+    width: 100%;
+}
+
+/* ---footer---- */
+
+footer{
+    height: 18.4em;
+    background: var(--header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 75em;
+    height: 90%;
+}
+
+.conte{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.comunidad{
+    width: 19.25em;
+    color: var(--blanco);
+}
+
+.comunidad h2{
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.comunidad hr{
+    margin-top: 5px;
+}
+
+.comunidad ul{
+    margin: 1em;
+}
+
+.comunidad ul li{
+    list-style: inside;
+    margin-top: 10px;
+}
+
+.comunidad .loca{
+    margin: 1em 1em 0;
+}
+
+.comunidad .des{
+    margin: 0 2em 0;
+}
+
+.footer .linea{
+    margin-top: 1em;
+}
+
+.dere {
+    color: var(--blanco);
+    text-align: center;
+}

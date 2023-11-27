@@ -1,0 +1,380 @@
+:root{
+    --azulOscuro: #010324;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+}
+.contenidoCursos{
+    display: none;
+}
+
+
+@media screen and (min-width:760px) {
+
+
+/*Encabezado*/
+.Encabezado2{
+    background-color: var(--azulOscuro);
+    width: 20%;
+    position: absolute;
+    height: 100%;
+    color:  var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Encabezado2 .titulo{
+    width: 80%;
+    height: 7%;
+    font-size: 18px;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+}
+.titulo .logo{
+    width: 30%;
+    height: 90%;
+}
+.Encabezado2 .nombre{
+    width: 80%;
+    height: 4.5%;
+    margin-top: 15%;
+    font-size: 25px;
+}
+.iconos{
+    width: 80%;
+    height: 30%;
+    margin-top: 20%;
+    font-size: 25px;
+}
+.iconos .icono{
+    display: flex;
+    padding: 5% 0% 5% 0%;
+    align-items: center;
+
+}
+.icono:hover{
+    background-color: #337AB7;
+}
+.Encabezado2 a{
+    text-decoration: none;
+    color: var(--blanco);
+    margin-left: 5%;
+    width: 50%;
+}
+.salir{
+    width: 80%;
+    height: 3%;
+    font-size: 25px;
+    display: flex;
+    padding: 5% 0% 5% 0%;
+    margin-top: 80%;
+    align-items: center;
+}
+.salir:hover{
+    background-color: #337AB7;
+}
+
+/*Contenido*/
+.contenido{
+    width: 80%;
+    margin-left: 20%;
+}
+.hambur{
+    display: none;
+}
+.secciones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion{
+    margin-left: 10%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 120px;
+    border-radius: 10px;
+    border: solid 1px #0B3860;
+    font-size: 40px;
+}
+.seccion i{
+    font-size: 50px;
+}
+.seccion .numero{
+    width: 50%;
+    margin: 15% 8%;
+}
+.numero .Rol{
+    font-size: 30px;
+    margin-top: 6%;
+}
+
+
+.cronograma{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cronograma p{
+    width: 80%;
+    font-size: 25px;
+}
+
+.meses{
+    width: 80%;
+    margin-top: 4%;
+}
+table, th, td{
+    border: solid 1px gray;
+    border-collapse: collapse;
+}
+.meses .mes{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+}
+.mes button{
+    padding: 3px 13px;
+    margin-left: 1%;
+    border-radius: 6px;
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    border: #010324;
+}
+.mes h2{
+    margin-left: 30%;
+    font-size: 35px;
+}
+.rectanguloCareVerga{
+    border: solid 1px gray;
+    width: 77%;
+    padding: 1% 1.5%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.rectanguloCareVerga .dias,.eventos{
+    width: 100%;
+    display: flex;
+}
+.dias .dia{
+    width: 20%;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    border:  1px solid black;
+}
+.eventos .event{
+    width: 20%;
+    height: auto;
+    border:  1px solid black;
+    text-decoration: none;
+    color: black;
+}
+.event p{
+    height: auto;
+    width: 94%;
+    margin: 2%;
+    padding-left: 2%;
+    border-radius: 5px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    .Encabezado{
+        background-color: var(--azulOscuro);
+        width: 80%;
+        position: fixed;
+        height: 62rem;
+        color:  var(--blanco);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation-name: animarMenu; /*El nombre de la animnacion*/
+        animation-duration: .5s;/*Duracion de la animacion*/
+    }
+    .Encabezado2{
+        display: none;
+    }
+
+    @keyframes animarMenu{
+        from{left: -300px;
+            opacity: 0;}
+        to{left: 0px; 
+            opacity: 1;}
+    }
+
+
+    .Encabezado .titulo{
+        width: 80%;
+        height: 7%;
+        font-size: 18px;
+        display: flex;
+        margin-top: 5%;
+        align-items: center;
+    }
+    .titulo .logo{
+        width: 30%;
+        height: 80%;
+    }
+    .Encabezado .nombre{
+        width: 80%;
+        height: 4.5%;
+        margin-top: 15%;
+    }
+    .iconos{
+        width: 80%;
+        height: 30%;
+        margin-top: 10%;
+        font-size: 20px;
+    }
+    .iconos .icono{
+        display: flex;
+        padding: 5% 0% 5% 0%;
+    }
+    .Encabezado a{
+        text-decoration: none;
+        color: var(--blanco);
+        margin-left: 5%;
+        padding-top: 5%;
+        width: 50%;
+    }
+    .salir{
+        width: 80%;
+        height: 3%;
+        font-size: 20px;
+        display: flex;
+        padding: 5% 0% 5% 0%;
+        margin-top: 80%;
+    }
+    .salir:hover{
+        background-color: #337AB7;
+    }
+    
+
+
+
+    .hambur{
+        width: 100%;
+        color: #000000;
+        display: flex;
+    }
+    .fa-solid {
+        padding: 4%;
+        font-size: 25px;
+    }
+    .Titulo{
+        padding: 4% 4.5%;
+
+    }
+
+    /*Secciones*/
+    .contenido{
+        width: 100%;
+    }
+    .title, .fa-solid{
+        display: none;
+    }
+    .secciones{
+        width: 100%;
+        display: flex;
+        flex-direction: column;   
+        align-items: center;     
+    }
+    
+    .seccion{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        width: 70%;
+        height: 120px;
+        border-radius: 10px;
+        border: solid 1px #0B3860;
+        font-size: 30px;
+    }
+    .seccion i{
+        font-size: 50px;
+    }
+    .seccion .numero{
+        width: 50%;
+        margin: 15% 8%;
+    }
+    .numero .Rol{
+        font-size: 20px;
+        margin-top: 6%;
+    }
+
+    /*Cronograma*/
+    .cronograma{
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cronograma p{
+        width: 80%;
+        font-size: 25px;
+    }
+    
+    .meses{
+        width: 88.5%;
+        margin-top: 4%;
+    }
+    table, th, td{
+        border: solid 1px gray;
+        border-collapse: collapse;
+    }
+    .meses .mes{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 2.5rem;
+    }
+    .mes button{
+        padding: 3px 13px;
+        margin-left: 1%;
+        border-radius: 6px;
+        background-color: var(--azulOscuro);
+        color: var(--blanco);
+        border: #010324;
+    }
+    .mes h2{
+        margin-left: 30%;
+        font-size: 25px;
+    }
+    .rectanguloCareVerga{
+        border: solid 1px gray;
+        width:  85%;
+        padding: 2% 1.5%;
+        margin-top: 2.5%;
+    }
+    .semana{
+        width: 100%;
+        font-size:15px;
+    }
+    .semana td{
+        text-align: center;
+        font-size: 20px;
+    }
+}
