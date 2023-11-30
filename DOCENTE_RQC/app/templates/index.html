@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="../static/img/logonaciones.png">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Colegio Naciones Unidas</title>
+</head>
+<body>
+    <header>
+        <div class="title-logo">
+            <img src="../static/img/logonaciones.png" alt="LogoEmpresa">
+            <p>
+                Colegio Naciones Unidas I.E.D 
+            </p>
+        </div>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <div class="op">
+                    <li>
+                        <a href="{{url_for('home', op='index')}}"class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('home', op='aboutUs')}}">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('home', op='community')}}">Comunidad</a>
+                    </li>
+                </div>
+
+                <li>
+                    <a href="{{url_for('home', op='indexTeacher')}}" class="nav-button">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="img-presen">
+            <h1>
+                Bienvenido al Colegio Naciones Unidas I.E.D
+            </h1>
+        </div>
+
+        <div class="himno">
+            <div class="himn">
+                <div class="nuestro">
+                    <h1>Nuestro</h1>
+                    <h1 class="title-himno">Himno</h1>
+                </div>
+
+                <div class="parra">
+                    <div class="coes">
+                        <p>Coro</p>
+                        <p class="estrofas">
+                            ¡Somos jóvenes, miembros activos, base prima de la sociedad, 
+                            en camino de lucha vivimos, fundamento para progresar!
+                        </p>
+
+                        <p>Estrofas I</p>
+                        <p class="estrofas">
+                            Competentes, capaces, creativos, en el trabajo en equipo es acción, 
+                            forjaremos por siempre en las almas, a que viva en nosotros la unión.
+                        </p>
+
+                        <p>Estrofa II</p>
+                        <p class="estrofas">
+                            Esperanza, liderazgo y vida, las primicias de la juventud,
+                            presurosa siguiendo la línea Invariable de la rectitud.
+                        </p>
+                    </div>
+
+                    <div class="coes">
+                        <p>Estrofa III</p>
+                        <p class="estrofas">
+                            Al colegio Naciones Unidas le debemos una gran lealtad, 
+                            lucharemos por el bien de la patria a favor de nuestra comunidad.
+                        </p>
+
+                        <p>Estrofa IV</p>
+                        <p class="estrofas">
+                            Los principios se enmarcan seguidos de actitudes que infunden valor, 
+                            la enseñanza será compromiso, La certeza de un mundo mejor
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="foto">
+                <img src="../static/img/image 3.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="cads">
+            <div class="card">
+                <div class="cars">
+                    <div class="se">
+                        <h2>
+                            Se parte de nosotros
+                        </h2>
+
+                        <p class="matri">
+                            Matriculas Abiertas
+                        </p>
+
+                        <p class="conte">
+                            En este apartado encontraras los requisitos para realizar 
+                            la matricula para el año 2024, en el siguiente listado podras 
+                            encontrar el paso a paso para hacer parte de nosotros
+                        </p>
+
+                        <ul>
+                            <li>
+                                <p>
+                                    Paso a paso de la matricula 
+                                    <a href="#">(Descargable)</a>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Link para diligenciar en linea la matricula 
+                                    <a href="#">(hoja de matricula)</a>
+                                </p>
+                                
+                            </li>
+
+                            <li>
+                                <p>
+                                    Autorizacion de salidas edapogicas  
+                                    <a href="#">(descargable) </a>
+                                </p>
+                                
+                            </li>
+
+                            <li>
+                                <p>
+                                    Autorizacion manejo de imagen 
+                                    <a href="#">(descargable) </a>
+                                </p>
+                                
+                            </li> 
+                            
+                            <li>
+                                <p>
+                                    Autorizacion manejo de emergencias
+                                    <a href="#">(descargable) </a>
+                                </p>
+                                
+                            </li> 
+                        
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cars">
+
+                    <div class="se">
+                        <h2 class="title">
+                            Conoce nuestro manual de convivencia
+                        </h2>
+
+                        <p class="conte">
+                            En este apartado encontraras el manual de convivencia actualizado a 
+                            2023 de acuerdo a los ajustes sugeridos por la comunidad educativa en 
+                            el año 2022 Manual de convivencia 2023
+                        </p>
+
+                        <a href="#" class="manueal">Manual de convivencia 2023</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="motto">
+            <h1 class="mot">Educacion, Ciencia, Cultura y deporte para trascender</h1>
+            <h1 class="family">SOMOS FAMILIA NACIONES UNIDAS</h1>
+            <p class="copy">@2023 RQC_EDUCATIONAL INFORMATION</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            <hr class="linea"><br>
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+    <script type="text/JavaScript" src="../static/js/header.js" ></script>
+</body>
+</html>

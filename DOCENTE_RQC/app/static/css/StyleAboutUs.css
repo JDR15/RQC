@@ -1,0 +1,277 @@
+:root{
+    --blanco: #ffff;
+    --gris: #D9D9D9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Main */
+
+.img-presen1{
+    height: 37.5em;
+    background-image: url(../img/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-presen1 h1{
+    font-weight: 200;
+    color: var(--blanco);
+    font-size: 2.25em;
+}
+
+.vimi{
+    height: 29em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gris);
+}
+
+.todo1{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parra{
+    width: 80%;
+    height: 25em ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.vision{
+    width: 35%;
+}
+
+.vision h2{
+    text-align: center;
+    font-weight: 100;
+}
+
+.vision p{
+    text-align: justify;
+    margin-top: 2em;
+}
+
+.mision{
+    width: 35%;
+    height: 11em;
+}
+
+.mision h2{
+    text-align: center;
+    font-weight: 100;
+}
+
+.mision p{
+    text-align: justify;
+    margin-top: 2em;
+}
+
+.objetivo{
+    width: 100%;
+    height: 31.25em;
+    display: flex;
+    justify-content: center;
+}
+
+.todo{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.objetivo .parraob{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.objetivo .parraob .obje{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.objetivo .parraob .obje h2{
+    font-weight: 100;
+    margin: 5px;
+}
+
+.objetivo .parraob .obje .active{
+    color: var(--button);
+}
+
+.objetivo .parraob .info{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+
+.objetivo .parraob .info p{
+    width: 60%;
+    font-size: 20px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    
+}
+
+.objetivo .img{
+    width: 40em;
+    height: 100%;
+    background-image: url(../img/273748875_3127181867506547_449646560703679268_n\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.objetivo .img1{
+    width: 40em;
+    height: 100%;
+    background-image: url(../img/Rectangle\ 25.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* responsive de portatil L */
+
+@media only screen and ( min-width: 1440px){}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px){
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1.2em;
+    }
+}
+
+/* responsive de tableta */
+
+@media only screen and ( max-width: 768px){
+    .img-presen1{
+        height: 25em;
+    }
+
+    .img-presen1 h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .vision{
+        width: 40%;
+    }
+
+    .vision p{
+        font-size: 0.9em;
+    }
+    .mision p{
+        font-size: 0.9em;
+    }
+    .todo{
+        justify-content: center;
+    }
+
+    .objetivo .parraob{
+        width: 60%;
+    }
+
+    .objetivo .parraob .obje h2{
+        font-size: 1.6em;
+    }
+
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1.4em;
+    }
+    .objetivo .img{
+        display: none;
+    }
+
+    .objetivo .img1{
+        display: none;
+    }
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+    .img-presen1{
+        height: 15em;
+    }
+
+    .img-presen1 h1{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .vimi{
+        height: 38em;
+    }
+
+    .parra{
+        height: 29em;
+        flex-direction: column;
+    }
+    .vision p{
+        font-size: 0.9em;
+    }
+
+    .vision{
+        width: 100%;
+    }
+
+    .mision{
+        width: 100%;
+    }
+
+    .mision p{
+        font-size: 0.9em;
+    }
+
+    .todo{
+        justify-content: center;
+    }
+
+    .objetivo .parraob{
+        width: 90%;
+    }
+
+    .objetivo .parraob .obje h2{
+        font-size: 1.2em;
+    }
+
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1em;
+    }
+    .objetivo .img{
+        display: none;
+    }
+
+    .objetivo .img1{
+        display: none;
+    }
+
+}

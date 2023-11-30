@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+:root{
+    --header: #010324;
+    --degradado:#010324ee;
+    --blanco: #ffff;
+    --cards: #D1CAFF;
+    --button:#0066FF;
+    --motto:#1A0260;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header */
+
+header{
+    background: var(--header);
+    height: 3.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+}
+
+.title-logo{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--blanco);
+}
+
+.title-logo img{
+    width: 3.2em;
+    height: 90%;
+    background: #010324;
+}
+
+.title-logo p{
+    font-size: 1.3em;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar ul .op{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+
+}
+
+.nav-bar ul .op a{
+    color: var(--blanco);
+}
+
+.nav-bar ul li .nav-button{
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    color: var(--blanco);
+    background: var(--button);
+    font-size: 18px;
+
+}
+
+/* Main */
+
+.img-presen{
+    height: 37.5em;
+    background-image: url(../img/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-presen h1{
+    font-weight: 200;
+    color: var(--blanco);
+    font-size: 2.25em;
+}
+
+.himno{
+    width: 100%;
+    height: 37.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.himn{
+    margin: 27px 0px 27px 40px;
+    width: 80%;
+}
+
+.himn .nuestro {
+    display: flex;
+    justify-content: center;
+}
+
+.himn h1{
+    font-weight: 100;
+    margin: 5px;
+}
+
+.himn .title-himno{
+    color: var(--button);
+}
+.parra{
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.parra .coes{
+    height: 100%;
+    padding: 10px;
+}
+
+.parra .coes p{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.parra .coes .estrofas{
+    margin: 10px;
+}
+
+.foto{
+    width:519px;
+    padding: 27px 58px 27px 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+}
+
+.cads{
+    height: 37.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cards);
+}
+
+.card{
+    width: 55.563em;
+    height: 32.938em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cars{
+    width: 23.625em;
+    height: 80%;
+    background: var(--blanco);
+    border-radius: 1.5em;
+    display: flex;
+    padding: 10px 0px  0px;
+    flex-direction: column;
+    align-items: center;
+}
+.se{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.se h2{
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.se .matri{
+    width: 94%;
+    padding: 10px;
+}
+
+.se .conte{
+    text-align: justify;
+    padding: 10px;
+}
+
+.se ul{
+    width: 80%;
+}
+
+.se ul li {
+    margin-top: 10px;
+    list-style: decimal;
+}
+
+.se a{
+    text-decoration-line: underline;
+    color: var(--header);
+}
+
+.se .title {
+    text-align: center;
+}
+
+.se .manueal {
+    width: 94%;
+    padding: 9px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-end;
+}
+
+.motto{
+    height: 33.313em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image:  linear-gradient(
+        rgba(26, 2, 96, 0.8),
+        rgba(26, 2, 96, 0.8)
+    ),url(../img/lema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--blanco);
+    text-align: center
+}
+
+.motto .mot{
+    width: 80% ;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3.4em;
+}
+
+.motto .family{
+    font-family: 'Rubik', sans-serif;
+    font-size: 4em;
+}
+
+/* ---footer---- */
+
+footer{
+    height: 18.4em;
+    background: var(--header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 75em;
+    height: 90%;
+}
+
+.conte{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.comunidad{
+    width: 19.25em;
+    color: var(--blanco);
+}
+
+.comunidad h2{
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.comunidad hr{
+    margin-top: 5px;
+}
+
+.comunidad ul{
+    margin: 1em;
+}
+
+.comunidad ul li{
+    list-style: inside;
+    margin-top: 10px;
+}
+
+.comunidad .loca{
+    margin: 1em 1em 0;
+}
+
+.comunidad .des{
+    margin: 0 2em 0;
+}
+
+.footer .linea{
+    margin-top: 1em;
+}
+
+.dere {
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* responsive de portatil L */
+
+@media only screen and ( min-width: 1440px){
+    .title-logo{
+        width: 26%;
+        justify-content: space-around;
+    }
+
+    .nav-bar{
+        width: 65%;
+    }
+
+    .parra .coes p{
+        font-size: 1.5em;
+    }
+}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px){
+    .title-logo{
+        width: 33%;
+        justify-content: space-between;
+    }
+
+    .nav-bar{
+        width: 60%;
+    }
+
+    .parra .coes p{
+        font-size: 1.3em;
+    }
+
+    .motto .mot{
+        font-size: 2.5em;
+    }
+    
+    .motto .family{
+        font-size: 3em;
+    }
+
+}
+
+/* responsive de tableta */
+
+@media only screen and ( max-width: 768px){
+    .title-logo{
+        width: 45%;
+    }
+    .title-logo p{
+        width: 80%;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: var(--blanco);
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 4.8em;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--degradado);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{
+        
+        height: 15em;
+    }
+
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul .op{
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        height: 60%;
+    }
+    .nav-bar.active ul{
+        width: 90%;
+        opacity: 1;
+    }
+
+    .img-presen{
+        height: 25em;
+    }
+
+    .img-presen h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .foto{
+        display: none;
+    }
+
+    .himno{
+        padding: 1.5em 0px  1.5em;
+    }
+
+    .himn{
+        margin: 0px;
+    }
+
+    .parra .coes p{
+        font-size: 1.3em;
+    }
+
+    .motto{
+        height: 25em;
+    }
+    .motto .mot{
+        font-size: 2em;
+    }
+    
+    .motto .family{
+        font-size: 2.5em;
+    }
+
+    .conte{
+        justify-content: space-around;
+    }
+
+    #comunidad{
+        display: none;
+    }
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+
+    .title-logo{
+        width: 78%;
+    }
+    .title-logo p{
+        width: 75%;
+    }
+
+    .img-presen{
+        height: 15em;
+    }
+
+    .img-presen h1{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .foto{
+        display: none;
+    }
+
+    .himno{
+        height: 24.375em;
+    }
+
+    .himn{
+        width: 95%;
+        margin:0;
+    }
+
+    .himn h1{
+        font-size: 1.25em;
+        margin: 5px;
+    }
+
+    .parra .coes{
+        padding: 0;
+    }
+
+    .parra .coes p{
+        font-size: 0.813em;
+    }
+
+    .parra .coes .estrofas{
+        margin: 6px;
+    }
+
+    .cads{
+        height: 61em;
+    }
+
+    .card{
+        height: 99%;
+        justify-content: space-around;
+    }
+
+    
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cars{
+        width:90%;
+        height: 27.875em;
+    }
+
+    .motto{
+        display: none;
+    }
+
+    footer{
+        height: 27em;
+    }
+
+    .conte{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #comunidad{
+        display: none;
+    }
+}
+

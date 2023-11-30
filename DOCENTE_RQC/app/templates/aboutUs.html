@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/styleAboutUs.css">
+    <link rel="Icon" href="../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas - Sobre nosotros</title>
+</head>
+<body>
+    <header>
+        <div class="title-logo">
+            <img src="../static/img/logonaciones.png" alt="LogoEmpresa">
+            <p>
+                Colegio Naciones Unidas I.E.D 
+            </p>
+        </div>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <div class="op">
+                    <li>
+                        <a href="{{url_for('home', op='index')}}"class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('home', op='aboutUs')}}">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('home', op='community')}}">Comunidad</a>
+                    </li>
+                </div>
+
+                <li>
+                    <a href="{{url_for('home', op='indexTeacher')}}" class="nav-button">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="img-presen1">
+            <h1>
+                Sobre nosotros
+            </h1>
+        </div>
+
+         <div class="vimi">
+            <div class="todo1">
+                <div class="parra">
+                    <div class="vision">
+                        <h2>
+                            Vision
+                        </h2>
+    
+                        <p>
+                            Para el año 2025, el Colegio Naciones Unidas IED, será una institución líder 
+                            por sus procesos de gestión educativa y aportará a la sociedad ciudadanos proactivos, 
+                            competentes y comprometidos, que impacten su entorno y hagan aportes para mejorar su calidad de vida.
+                        </p>
+                    </div>
+    
+                    <div class="mision">
+                        <h2>
+                            Mision
+                        </h2>
+    
+                        <p>
+                            Formamos seres humanos integrales, competentes, comprometidos, 
+                            con amplio desarrollo del liderazgo que le permite transformar su entorno.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="objetivo">
+            <div class="todo">
+                <div class="parraob">
+                    <div class="obje">
+                        <h2>Objetivo</h2>
+                        <h2 class="active">Institucional</h2>
+                    </div>
+
+                    <div class="info">
+                        <p>
+                            Formar líderes gestores, promotores, íntegros y competentes, 
+                            capaces de construir conocimiento socialmente útil, dando uso adecuado 
+                            a la tecnología para afrontar retos sociales y laborales que respondan a la 
+                            realidad de su entorno.
+                        </p>
+                    </div>
+                </div>
+                <div class="img"></div>
+            </div>
+        </div>
+
+        <div class="objetivo">
+            <div class="todo">
+                <div class="img1"></div>
+                <div class="parraob">
+                    <div class="obje">
+                        <h2>Perfil Del Estudiante</h2>
+                    </div>
+
+                    <div class="info">
+                        <p>
+                            Al finalizar el último grado de la Educación Media, 
+                            el (la) joven egresado(a) del Colegio Naciones Unidas IED, 
+                            será una persona proactiva, entusiasta, capaz de comunicarse, 
+                            competente, comprometida, que le permite liderar la transformación 
+                            e impactar su entorno, a través de sus aportes para mejorar su calidad 
+                            de vida, la de su familia y de la comunidad y a la vez, poder ingresar 
+                            al mundo laboral como resultado del aprendizaje obtenido en su formación 
+                            técnica con el SENA.     
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            <hr class="linea"><br>
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+    <script type="text/JavaScript" src="../static/js/header.js" ></script>
+</body>
+</html>

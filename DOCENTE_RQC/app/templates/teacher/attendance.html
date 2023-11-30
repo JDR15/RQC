@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/styleAttendance.css">
+    <link rel="ICON" href="../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas - Asistencia</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="title-logo">
+                <img src="../static/img/logonaciones.png" alt="Logo-Empresa">
+                <h1 class="title">Colegio Naciones Unidas I.E.D</h1>
+            </div>
+
+            <button id="abrir" class="abrirMenu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menu" class="nav-bar">
+                <button id="cerrar" class="cerrarMenu"><i class="fa-solid fa-x"></i></button>
+                <ul>
+                    <li><a href="{{url_for('home', op='indexTeacher')}}" class="op">Inicio</a></li>
+                    <li><a href="{{url_for('docenteAsistencia')}}" class="op1">Asistencia</a></li>
+                    <li><a href="{{url_for('home', op='schedule')}}"class="op2">Cronograma</a></li>
+                    <li><a href="{{url_for('calificaciones')}}" class="op3">Calificaciones</a></li>
+                    <li><a href="{{url_for('home', op='index')}}" class="op4"><i class="material-symbols-outlined">logout</i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-img">
+            <h1>
+                Asistencia por curso
+            </h1>
+        </div>
+
+        <div class="curso">
+            <h1 class="sc">
+                Sus cursos
+            </h1>
+
+            <div class="cursos">
+            
+                <div  class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>601</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary"><i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" id="abrirModal">Guardar</a></li>
+                              <li><a class="dropdown-item" href="#" onclick="abrirModal()">Actualizar</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            
+                <div class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>602</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary"><i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" >Guardar</a></li>
+                              <li><a class="dropdown-item" href="">Actualizar</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>701</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary"><i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" >Guardar</a></li>
+                              <li><a class="dropdown-item" href="">Actualizar</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>702</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary"><i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" >Guardar</a></li>
+                              <li><a class="dropdown-item" href="#" >Actualizar</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h2>Lista de Estudiantes</h2>
+                <br>
+                <form method="POST" action="{{ url_for('nueva_asistencia') }}" onsubmit="return validarFormulario()">
+                    <label for="materia">Materia:</label>
+                    <select id="materia" name="materia" required>
+                        {% for materia in materias %}
+                        <option value="{{ materia[0] }}">{{ materia[1] }}</option>
+                        {% endfor %}
+                    </select><br><br>
+                    <label for="periodo">Periodo:</label>
+                    <select id="periodo" name="periodo" required>
+                        {% for periodo in periodos %}
+                        <option value="{{ periodo[0] }}">{{ periodo[1] }} - {{ periodo[2] }}</option>
+                        {% endfor %}
+                    </select><br><br>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                    <br><br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Asistencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for estudiante in estudiantes %}
+                            <tr>
+                                <td id="nombre-{{ estudiante[0] }}">{{ estudiante[1] }} {{ estudiante[2] }}</td>
+                                <td><input type="checkbox" class="asistencia-checkbox" name="estudiantes" value="{{ estudiante[0] }}">
+                                </td>                            
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <input type="submit" id="guardarAsistencia" value="Guardar Asistencias">
+                </form>
+            </div>
+        </div>
+        
+        <div id="modal_" class="modal_">
+            <div class="modal-content">
+                <span class="close_" onclick="cerrarModal()">&times;</span>
+                <h2 id="modal-nombre">Actualizar Asistencia</h2>
+                <br>
+                <form method="POST" onsubmit="return validarFormularioActualizar()"  action="{{ url_for('actualizar_asistencia') }}">
+                    <label for="modal-idEstudiante">Estudiantes:</label>
+                    <select id="modal-idEstudiante" name="estudiantes" required>
+                        {% for estudiante in estudiantes %}
+                            <option value="{{ estudiante[0] }}"> {{ estudiante[1] }} {{ estudiante[2] }}</option>
+                        {% endfor %}
+                    </select><br><br>
+                    <label for="modal-materia">Materia:</label>
+                    <select id="modal-materia" name="materia" required>
+                        {% for materia in materias %}
+                            <option value="{{ materia[0] }}">{{ materia[1] }}</option>
+                        {% endfor %}
+                    </select><br><br>
+                    <label for="modal-periodo">Periodo:</label>
+                    <select id="modal-periodo" name="periodo" required>
+                        {% for periodo in periodos %}
+                            <option value="{{ periodo[0] }}">{{ periodo[1] }} - {{ periodo[2] }}</option>
+                        {% endfor %}
+                    </select><br><br>
+                    <label for="modal-fecha">Fecha:</label>
+                    <input type="date" id="modal-fecha" name="fecha" ><br><br>
+                    <label for="modal-asistencia">Asistencia:</label>
+                    <select id="modal-asistencia" name="asistencia" required>
+                        <option value="1">Presente</option>
+                        <option value="0">Ausente</option>
+                    </select><br>
+                    <input type="submit" id="actualizarAsistencia" value="Actualizar Asistencia">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            
+            <hr class="linea"><br>
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+    <script src="../static/js/Script_2.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
